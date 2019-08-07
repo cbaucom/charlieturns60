@@ -15,6 +15,10 @@ export const InfoContainer = styled.div`
   background: #94bae9;
 `
 
+export const CheersContainer = styled.h2`
+  animation: scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+`
+
 export const ImageContainer = styled.div`
   width: 150px;
   height: 150px;
@@ -40,7 +44,7 @@ export const DetailsContainer = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-`
+  `
 
 export const TextContainer = styled.div`
   /* background-color: #94bae9; */
@@ -48,9 +52,11 @@ export const TextContainer = styled.div`
   color: #fefefe;
   text-align: center;
   padding: 2rem 1rem;
+
   .where {
     padding-bottom: 2rem;
   }
+
   h2,
   p {
     margin-bottom: 10px;

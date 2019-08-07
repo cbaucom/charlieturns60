@@ -33,7 +33,8 @@ export const FooterContainer = styled.footer`
   width: 100%;
   display: flex;
   justify-content: center;
-
+  /* animation: slide-in-blurred-bottom 1.25s cubic-bezier(0.175, 0.885, 0.320, 1.275) both; */
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   a {
     color: #fefefe;
     text-decoration: none;

@@ -28,7 +28,7 @@ export const ButtonContainer = styled.div`
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     width: 100%;
     &:hover {
-      transform: scale(1.01);
+      animation: jello-diagonal-2 0.8s both;
       box-shadow: 0px 0px 10px 4px RGBA(250, 250, 250, 0.8),
         inset 0 1px 0 0 RGBA(148, 186, 233, 1),
         inset 0 2px 4px 0 RGBA(148, 186, 233, 1);

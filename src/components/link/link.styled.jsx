@@ -25,7 +25,7 @@ export const StyledLink = styled(Link)`
 	width: 100%;
 	z-index: 10;
   &:hover {
-    transform: scale(1.01);
+    animation: jello-diagonal-1 0.8s both;
     box-shadow: 0px 0px 10px 4px RGBA(250, 250, 250, 0.8),
       inset 0 1px 0 0 RGBA(148, 186, 233, 1),
       inset 0 2px 4px 0 RGBA(148, 186, 233, 1);

@@ -3,7 +3,7 @@ import React from "react"
 import MapComponent from "../google-map/google-map.component"
 
 import { StyledLink } from "../link/link.styled"
-import { InfoContainer, ImageContainer, DetailsContainer, TextContainer } from "./info.styles";
+import { InfoContainer, CheersContainer, ImageContainer, DetailsContainer, TextContainer } from "./info.styles";
 
 class Info extends React.Component {
   static defaultProps = {
@@ -17,7 +17,7 @@ class Info extends React.Component {
     return (
       <InfoContainer>
         <ImageContainer />
-        <h2>
+        <CheersContainer>
           <span role="img" aria-label="beer cheers emoji">
             🍻
           </span>{" "}
@@ -25,7 +25,7 @@ class Info extends React.Component {
           <span role="img" aria-label="beer cheers emoji">
             🍻
           </span>
-        </h2>
+        </CheersContainer>
         <DetailsContainer>
           <TextContainer>
             <div className="where">
