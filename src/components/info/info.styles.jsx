@@ -1,8 +1,5 @@
 import styled from "styled-components"
 
-import ceb_kid_img from "../../images/ceb-kid-headshot.png"
-import ceb_old_img from "../../images/ceb-old-headshot.png"
-
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,14 +21,8 @@ export const ImageContainer = styled.div`
   height: 150px;
   margin-bottom: 1rem;
   border-radius: 50%;
-
-  transition: background-image 1s ease-in-out;
-  background: url(${ceb_kid_img}) center center no-repeat;
+  animation: image-slideshow 7s linear infinite alternate;
   background-size: contain;
-
-  &:hover {
-    background-image: url(${ceb_old_img});
-  }
 `
 
 export const DetailsContainer = styled.div`

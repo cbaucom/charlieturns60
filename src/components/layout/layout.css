@@ -705,3 +705,15 @@ pre tt:after {
     opacity: 1;
   }
 }
+
+@keyframes image-slideshow {
+  0% {
+    background-image: url('../../images/ceb-kid-headshot.png');
+  }
+  /* 33% {
+    background-image: url('../../images/ceb-old-headshot.png');
+  } */
+  100% {
+    background-image: url('../../images/ceb-old-headshot.png');
+  }
+}
