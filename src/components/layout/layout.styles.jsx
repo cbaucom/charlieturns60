@@ -17,7 +17,6 @@ export const LayoutContainer = styled.div`
 
 export const MainContainer = styled.main`
   width: 90vw;
-
   max-width: 960px;
   color: #032448;
   margin: 2rem auto;
@@ -26,6 +25,10 @@ export const MainContainer = styled.main`
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+
+  @media screen and (max-width: 600px) {
+    margin: 0 auto;
+  }
 `
 
 export const FooterContainer = styled.footer`

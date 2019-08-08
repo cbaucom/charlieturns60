@@ -18,19 +18,21 @@ class Info extends React.Component {
       <InfoContainer>
         <ImageContainer />
         <CheersContainer>
+          <h2>
           <span role="img" aria-label="beer cheers emoji">
             🍻
           </span>{" "}
-          Join us as we cheers to Charlie turning 60{" "}
+          Cheers to Charlie turning 60{" "}
           <span role="img" aria-label="beer cheers emoji">
             🍻
-          </span>
+          </span></h2>
+          <p>Join us for drinks, dinner, and dancing!</p>
         </CheersContainer>
         <DetailsContainer>
           <TextContainer>
             <div className="where">
               <h3>Where:</h3>
-              <p>Sideways BBQ at the Harbor</p>
+              <p><a href="https://sidewaysbbq.com/" className="bbq-link">Sideways BBQ</a> at the Harbor</p>
               <p>2067 Summer Lee, Rockwall, TX</p>
             </div>
             <div className="when">
