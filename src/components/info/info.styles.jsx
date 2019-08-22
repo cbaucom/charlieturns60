@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-import kidPic from '../../images/ceb-kid-headshot.png'
-import oldPic from '../../images/ceb-old-headshot.png'
+import kidPic from "../../images/ceb-kid-headshot.png"
+import oldPic from "../../images/ceb-old-headshot.png"
 
 export const InfoContainer = styled.div`
   display: flex;
@@ -38,7 +38,7 @@ export const DetailsContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 100%;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -65,26 +65,19 @@ export const TextContainer = styled.div`
     margin-bottom: 1rem;
   }
 
-  .bbq-link {
-    position: relative;
-    font-weight: 900;
+  .bbq-link,
+  .hotel-phone-link {
+    font-weight: 700;
+    box-shadow: inset 0 -2px 0 0 #94bae9;
+    margin: 0 0.15rem;
+    border-bottom: 1px solid #94bae9;
 
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 3px;
-      display: block;
-      margin-top: 5px;
-      right: 0;
-      background: #fff;
-      transition: width 0.2s ease;
+    &:hover {
+      background: #94bae9;
     }
+  }
 
-    &:hover:after {
-      width: 100%;
-      left: 0;
-      background: #fff;
-    }
+  .lodging p:last-child {
+    font-size: 0.9rem;
   }
 `
