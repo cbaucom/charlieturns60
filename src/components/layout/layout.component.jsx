@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet>
-          <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
+          <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
         <LayoutContainer>
           <MainContainer>{children}</MainContainer>
