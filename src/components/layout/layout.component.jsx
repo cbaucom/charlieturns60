@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
+import "typeface-montserrat"
 import "./layout.css"
 
 import { LayoutContainer, MainContainer, FooterContainer } from "./layout.styles";
