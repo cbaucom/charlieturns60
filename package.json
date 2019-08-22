@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Chris Baucom <chris@builtbybaucom.com>",
   "dependencies": {
+    "a11y-react-emoji": "^1.0.2",
     "babel-plugin-styled-components": "^1.10.1",
     "confetti-js": "^0.0.15",
     "gatsby": "^2.9.4",

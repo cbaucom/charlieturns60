@@ -1087,6 +1087,11 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha512-FZdkNBDqBRHKQ2MEbSC17xnPFOhZxeJ2YGSfr2BKf3sujG49Qe3bB+rGCwQfIaA7WHnGeGkSijX4FuBCdrzW/g==
 
+a11y-react-emoji@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/a11y-react-emoji/-/a11y-react-emoji-1.0.2.tgz#d2b2e821e010398a5fbdb3391f4986407cbe0fab"
+  integrity sha512-4kZaQ7/cMI2/xep6tYLyfhWKcm71z4fuCyQdv75GlH00t1FqUrgh8b/5YOarDrmQc8mczH0JY08Gc0m3uHUuOQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"

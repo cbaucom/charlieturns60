@@ -1,6 +1,7 @@
 import React from "react"
 import ConfettiGenerator from "confetti-js"
 import styled from "styled-components"
+import Emoji from "a11y-react-emoji"
 
 import Layout from "../components/layout/layout.component"
 import SEO from "../components/seo/seo.component"
@@ -62,9 +63,7 @@ export default props => {
             <div className="text-wrapper">
               <h1>
                 Thanks, {props.location.state.name}!{" "}
-                <span role="img" aria-label="beer cheers emoji">
-                  🍻
-                </span>
+                <Emoji symbol="🍻" label="beer cheers emoji" />
               </h1>
               <h3>We can't wait to see you!</h3>
             </div>
@@ -82,10 +81,7 @@ export default props => {
           <Container>
             <div className="text-wrapper">
               <h1>
-                Thanks!{" "}
-                <span role="img" aria-label="beer cheers emoji">
-                  🍻
-                </span>
+                Thanks! <Emoji symbol="🍻" label="beer cheers emoji" />
               </h1>
               <h3>We can't wait to see you!</h3>
             </div>

@@ -6,7 +6,7 @@ import SEO from "../components/seo/seo.component"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="🍻Cheers to 60 🍻 " />
+    <SEO title="Cheers to 60 🍻 " />
     <Info />
   </Layout>
 )

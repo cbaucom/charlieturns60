@@ -1,4 +1,5 @@
 import React from "react"
+import Emoji from 'a11y-react-emoji'
 
 import MapComponent from "../google-map/google-map.component"
 
@@ -19,13 +20,10 @@ class Info extends React.Component {
         <ImageContainer />
         <CheersContainer>
           <h2>
-          <span role="img" aria-label="beer cheers emoji">
-            🍻
-          </span>{" "}
-          Cheers to Charlie turning 60{" "}
-          <span role="img" aria-label="beer cheers emoji">
-            🍻
-          </span></h2>
+            <Emoji symbol="🍻" label="beer cheers emoji" />{" "}
+            Cheers to Charlie turning 60{" "}
+            <Emoji symbol="🍻" label="beer cheers emoji" />
+          </h2>
           <p>Join us for drinks, dinner, and dancing!</p>
         </CheersContainer>
         <DetailsContainer>
