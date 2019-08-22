@@ -1,5 +1,8 @@
 import styled from "styled-components"
 
+import kidPic from '../../images/ceb-kid-headshot.png'
+import oldPic from '../../images/ceb-old-headshot.png'
+
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,8 +24,12 @@ export const ImageContainer = styled.div`
   height: 150px;
   margin-bottom: 1rem;
   border-radius: 50%;
-  animation: image-slideshow 7s linear infinite alternate;
-  background-size: contain;
+  animation: image-slideshow 5s ease infinite alternate;
+  /* background-size: contain; */
+  background-image: url(${kidPic}), url(${oldPic});
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0px, 250px 0px;
 `
 
 export const DetailsContainer = styled.div`
