@@ -1,5 +1,5 @@
 import React from "react"
-import Helmet from 'react-helmet'
+import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "typeface-montserrat"
@@ -26,6 +26,8 @@ const Layout = ({ children }) => (
       <>
         <Helmet>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
+          <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
         </Helmet>
         <LayoutContainer>
           <MainContainer>{children}</MainContainer>
