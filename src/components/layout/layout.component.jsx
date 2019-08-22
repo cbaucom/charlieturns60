@@ -4,7 +4,11 @@ import { StaticQuery, graphql } from "gatsby"
 import "typeface-montserrat"
 import "./layout.css"
 
-import { LayoutContainer, MainContainer, FooterContainer } from "./layout.styles";
+import {
+  LayoutContainer,
+  MainContainer,
+  FooterContainer,
+} from "./layout.styles"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,6 +23,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <Helmet>
+          <script src="https://cdn.polyfill.io/v2/polyfill.min.js" />
+        </Helmet>
         <LayoutContainer>
           <MainContainer>{children}</MainContainer>
           <FooterContainer>
