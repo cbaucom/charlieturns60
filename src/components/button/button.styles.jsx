@@ -20,7 +20,7 @@ export const ButtonContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 5px;
+    margin: 0 auto;
     padding: 5px;
     max-width: 200px;
     height: 50px;

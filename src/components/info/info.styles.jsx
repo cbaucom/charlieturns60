@@ -17,6 +17,11 @@ export const InfoContainer = styled.div`
 
 export const CheersContainer = styled.div`
   animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: flex;
+
+  .gatsby-image-wrapper {
+    margin: 0 0.5rem;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -25,7 +30,7 @@ export const ImageContainer = styled.div`
   margin-bottom: 1rem;
   border-radius: 50%;
   animation: image-slideshow 5s ease infinite alternate;
-  /* background-size: contain; */
+  background-size: contain;
   background-image: url(${kidPic}), url(${oldPic});
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -45,7 +50,6 @@ export const DetailsContainer = styled.div`
 `
 
 export const TextContainer = styled.div`
-  /* background-color: #94bae9; */
   background-color: #032448;
   color: #fefefe;
   text-align: center;

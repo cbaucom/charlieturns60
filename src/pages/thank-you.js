@@ -1,7 +1,7 @@
 import React from "react"
 import ConfettiGenerator from "confetti-js"
 import styled from "styled-components"
-import Emoji from "a11y-react-emoji"
+import beersIcon from "../images/clinking-beer-mugs_1f37b.png"
 
 import Layout from "../components/layout/layout.component"
 import SEO from "../components/seo/seo.component"
@@ -22,6 +22,11 @@ const Container = styled.div`
   justify-content: center;
   min-height: 50vh;
   text-align: center;
+
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
 
   .text-wrapper {
     height: 100%;
@@ -61,10 +66,8 @@ export default props => {
         <>
           <Container>
             <div className="text-wrapper">
-              <h1>
-                Thanks, {props.location.state.name}!{" "}
-                <Emoji symbol="🍻" label="beer cheers emoji" />
-              </h1>
+              <h1>Thanks, {props.location.state.name}! </h1>
+              <img src={beersIcon} alt="beers cheers emoji" />
               <h3>We can't wait to see you!</h3>
             </div>
             <StyledLink to="/">Back Home</StyledLink>
@@ -80,9 +83,8 @@ export default props => {
         <>
           <Container>
             <div className="text-wrapper">
-              <h1>
-                Thanks! <Emoji symbol="🍻" label="beer cheers emoji" />
-              </h1>
+              <h1>Thanks!</h1>
+              <img src={beersIcon} alt="beers cheers emoji" />
               <h3>We can't wait to see you!</h3>
             </div>
             <StyledLink to="/">Back Home</StyledLink>
