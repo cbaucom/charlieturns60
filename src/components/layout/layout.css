@@ -711,13 +711,15 @@ pre tt:after {
 
 @keyframes image-slideshow {
   /* Doesn't work on IE or Firefox */
-  /* 0% {
+  0% {
     background-image: url('../../images/ceb-kid-headshot.png');
   }
   100% {
     background-image: url('../../images/ceb-old-headshot.png');
-  } */
+  }
+}
 
+@keyframes ie-image-slideshow {
   0%,
   50% {
     background-position: 0px 0px, 250px 0px; /* initially 1st image will be shown as it it as 0px 0px */

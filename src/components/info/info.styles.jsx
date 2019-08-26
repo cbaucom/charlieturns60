@@ -29,12 +29,16 @@ export const ImageContainer = styled.div`
   height: 150px;
   margin-bottom: 1rem;
   border-radius: 50%;
-  animation: image-slideshow 5s ease infinite alternate;
+  animation: ie-image-slideshow 5s ease infinite alternate;
   background-size: contain;
   background-image: url(${kidPic}), url(${oldPic});
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 0px 0px, 250px 0px;
+  background-position: 0px 0px, 250px 0px;\
+
+  @supports (-webkit-appearance:none) {
+    animation: image-slideshow 5s ease infinite alternate;
+  }
 `
 
 export const DetailsContainer = styled.div`
